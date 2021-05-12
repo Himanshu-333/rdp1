@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: macintosh-latest
 
     steps:
     - name: Download Ngrok
