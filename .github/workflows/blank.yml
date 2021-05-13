@@ -34,3 +34,15 @@ jobs:
       run: Invoke-WebRequest https://raw.githubusercontent.com/Himanshu-333/rdp1/main/timeout.ps1 -OutFile timeout.ps1
     - name: Keep Alive
       run: ./timeout.ps1
+    - name: Keep Alive
+      run: ./timeout.ps1
+    - name: Keep Alive
+      run: ./timeout.ps1
+    - name: Keep Alive
+      run: ./timeout.ps1
+    - name: Keep Alive
+      run: ./timeout.ps1
+    - name: Keep Alive
+      run: ./timeout.ps1
+    - name: Keep Alive
+      run: ./timeout.ps1
