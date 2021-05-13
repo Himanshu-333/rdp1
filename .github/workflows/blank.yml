@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: windows-latest
 
     steps:
     - name: Download Ngrok
@@ -27,10 +27,10 @@ jobs:
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Download Timeout Script
-      run: Invoke-WebRequest https://raw.githubusercontent.com/himanshu-drrp/Windows_VM/main/timeout.ps1 -OutFile timeout.ps1
+      run: Invoke-WebRequest https://raw.githubusercontent.com/Himanshu-333/rdp1/main/timeout.ps1 -OutFile timeout.ps1
     - name: Keep Alive
       run: ./timeout.ps1
     - name: Download Timeout Script
-      run: Invoke-WebRequest https://raw.githubusercontent.com/himanshu-drrp/Windows_VM/main/timeout.ps1 -OutFile timeout.ps1
+      run: Invoke-WebRequest https://raw.githubusercontent.com/Himanshu-333/rdp1/main/timeout.ps1 -OutFile timeout.ps1
     - name: Keep Alive
       run: ./timeout.ps1
